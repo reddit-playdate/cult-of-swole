@@ -4,10 +4,14 @@
 
 {% seo %}
 
-<header>
-  <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-  <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-</header>
+<nav>
+  <div>
+    <a href='{{ '/' | relative_url }}'>{{ site.title | default: site.github.repository_name }}</a>
+  </div>
+  <div>
+    <a href='https://discord.gg/playdate'>Chat</a>
+  </div>
+</nav>
 
 <section id=main>
   {{ content }}

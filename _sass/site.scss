@@ -20,13 +20,30 @@ body {
 nav {
   font-size: 120%;
   width: 100%;
-  padding: 0.5em 1em;
   display: flex;
+  height: 2em;
   justify-content: space-between;
   background: linear-gradient(rgba(#000, 0.2), rgba(#000, 0.1));
   border-bottom: 1px solid rgba(#000, 0.2);
 }
+nav > div {
+  display: flex;
+}
 
+nav > div > a:hover {
+  background: rgba(#000, 0.1);
+}
+
+nav > div > a {
+  display: block;
+  padding: 0 1em;
+  line-height: 2em;
+}
+x-sep {
+  height: 100%;
+  display: block;
+  border-left: 1px dashed rgba(#000, 0.2);
+}
 
 #main {
   margin: 1em 1em;
